@@ -1,46 +1,101 @@
-.loginContainer{
+.container{
+    display: flex;
     position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    flex-direction: row;
+    width: 55%;
+    min-width: 800px;
+}
+
+.bannerContainer{
+    background-color: #1D9BF0;
+    padding: 5% 5% 5% 10%;
+}
+
+.bannerHeader>*{
+    color: white;
+}
+
+
+h1{
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+.bannerHeader>p{
+    font-weight: 500;
+}
+
+.bannerContainer>img{
+    width: 100%;
+}
+
+.loginContainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    box-shadow: 7px 2px 50px -10px rgb(218, 218, 218);
-    height: 15em;
-    width: 20em;
-    border-radius: 40px;
+    justify-content: space-around;
+    padding-left: 6%;
+    padding-right: 5%;
+    padding-top: 3%;
+    width: 100%;
 }
 
-.formStyle{
-    margin: 10px;
-    border: none;
-    border-bottom: 1px rgb(163, 163, 163) solid;
+.loginHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+.loginHeader>img{
+    width: 40px;
 }
 
-.formInput:focus{
-    border: none;
-    outline: none;
-    border-bottom: 1px rgb(15, 15, 15) solid;
-}
-.btn{
-    color: white;
-    text-align: center;
-    font-weight: 900;
-    font-size: 90%;
-    border-radius: 30px;
-    min-height: 36px;
-    width: 40%;
-    min-width: 80px;
+.loginHeader .registerLink{
+    color: #1D9BF0;
     cursor: pointer;
 }
 
-.btn:focus{
-    outline: none;
+.loginHeader>p{
+    font-size: 15px;
 }
 
-.blue{
-    background-color: #1DA1F2;
+h3{
+    color: #757575;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer>input{
+    border: none;
+    background-color: #EEEEEE;
+    height: 2em;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.formContainer>p{
+    text-align: right;
+    font-size: 12px;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+.forgotPassword{
+    color: #757575;
+    cursor: pointer;
+}
+
+.forgotPassword:hover{
+    color: black;
 }

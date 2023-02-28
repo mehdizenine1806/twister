@@ -2,7 +2,7 @@ import "../../css/login.css";
 import Button from "../Button";
 import logo from "../../img/logo.png";
 import banner from "../../img/banner.png";
-const Login = (login , register) => {
+const Login = ({ login, register }) => {
   return (
     <div className="loginContainer">
       <div className="bannerContainer">
@@ -16,13 +16,13 @@ const Login = (login , register) => {
           <input
             id="password"
             type="password"
-            placeHolder="Mot de Passe"
+            placeholder="Mot de Passe"
           ></input>
           <p className="forgotPassword">Mot de passe oublié?</p>
-          <Button backgroundColor="#1D9BF0" className="btn signin">
+          <Button backgroundColor="#1D9BF0" className="signin">
             Connexion
           </Button>
-          <Button outline="#1D9BF0" className="btn register">
+          <Button outline="#1D9BF0" className="register" click={register}>
             Inscription
           </Button>
         </div>

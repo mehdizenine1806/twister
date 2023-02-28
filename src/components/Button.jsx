@@ -1,5 +1,5 @@
 import "../css/common.css";
-const Button = ({ children, backgroundColor, outline,onClick }) => {
+const Button = ({ children, backgroundColor, outline, click }) => {
   return backgroundColor === undefined ? (
     <button
       style={{
@@ -7,12 +7,14 @@ const Button = ({ children, backgroundColor, outline,onClick }) => {
         backgroundColor: "#FFFF",
         color: outline,
       }}
-      onClick={onClick}
+      onClick={click}
     >
       {children}
     </button>
   ) : (
-    <button style={{ backgroundColor: backgroundColor }} onClick={onClick}>{children}</button>
+    <button style={{ backgroundColor: backgroundColor }} onClick={click}>
+      {children}
+    </button>
   );
 };
 

@@ -9,12 +9,18 @@ function App() {
 
   const getRegistered = () => {
     setRegister(!register);
-  }
+  };
 
   const getConnected = () => {
     setConnect(!connect);
-  }
+  };
 
-  return connect?<div>Hello</div>:(!register?<Login login = {getConnected} register={getRegistered}></Login>:<Signup></Signup>);
+  return connect ? (
+    <div>Hello</div>
+  ) : !register ? (
+    <Login login={getConnected} register={getRegistered}></Login>
+  ) : (
+    <Signup></Signup>
+  );
 }
 export default App;

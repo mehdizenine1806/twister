@@ -1,36 +1,47 @@
-.SignupContainer{
-    background-color: #6aa9d3;
+.container{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.SignupForm{
+.signupForm{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
-    border-radius: 2%;
-    box-shadow: 0 1px 40px rgb(16, 56, 109);
-    width: 60%;
+    justify-content: center;
+    width: 30%;
+    height: 10%;
 }
 
 .logo{
-    padding-top: 4%;
+    margin-top: 4%;
 }
-.SignupTitle{
-    padding-top: 4%;
-    font-size: 3vw;
+.signupTitle{
+    margin-top: 2%;
+    font-size: 20px;
 }
 
 Button{
-    margin-top: 2%;
-    margin-bottom: 5%;
+    margin-top: 4%;
 } 
 
 select {
-    margin-top: 3%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    margin-top: 5%;
+    padding: 3% 3% 3% 7%;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    width: 100%;
+}
+
+select:invalid{
+    color:rgb(102, 102, 102);
+}
+select:valid{
+    color: black;
+}
+.signupForm>input{
+    margin-top:6%;
 }

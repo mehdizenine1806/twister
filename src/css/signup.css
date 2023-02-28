@@ -28,11 +28,13 @@ Button{
 } 
 
 select {
-    margin-top: 3%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    margin-top: 5%;
+    padding: 3% 3% 3% 7%;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    width: 100%;
 }
-
 select:invalid{
     color:rgb(102, 102, 102);
 }
@@ -41,4 +43,10 @@ select:valid{
 }
 .signupForm>input{
     margin-top:6%;
+}
+
+label {
+    margin-top: 10%;
+    margin-bottom: -2%;
+    font-family: 'Courier New', Courier, monospace;
 }

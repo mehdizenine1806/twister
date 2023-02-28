@@ -16,9 +16,12 @@ function App() {
   };
 
   const getConnected = () => {
-    setConnect(!connect);
+    setConnect(!connect); 
   };
 
-  return connect?<div>Hello</div>:(!register?<Login login = {getConnected} register={getRegistered}></Login>:<Signup></Signup>);
+  const didForgot = () => {
+    setForgotten(!forgotten);
+  }
+  return connect?<div>Hello</div>:(!register? (!forgotten ? <Login login = {getConnected} register={getRegistered} forgotten={didForgot}></Login> : <Forgotten></Forgotten>) :<Signup></Signup>);
 }
 export default App;

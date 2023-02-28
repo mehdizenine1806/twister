@@ -13,7 +13,7 @@
     background-color: #ffffff;
     border-radius: 2%;
     box-shadow: 0 1px 40px rgb(16, 56, 109);
-    width: 50vw;
+    width: 50%;
 }
 
 .logo{
@@ -21,7 +21,7 @@
 }
 .banner{
     padding-top: 4%;
-    font-size: 3vh;
+    font-size: 3vw;
 }
 
 

@@ -1,44 +1,60 @@
 .loginContainer{
-    background-color: #6aa9d3;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.bannerContainer{
+    background: rgb(95,91,161);
+    background: radial-gradient(circle, rgba(95,91,161,1) 0%, rgba(83,165,242,1) 59%); 
+    width:50%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.bannerContainer>img{
+    height: 80%;
+}
 .formContainer{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 2%;
-    box-shadow: 0 1px 40px rgb(16, 56, 109);
     width: 50%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
 }
-
-.logo{
-    padding-top: 4%;
+.formContainer>img{
+    margin-top: 8%;
 }
 .banner{
-    padding-top: 4%;
-    font-size: 3vw;
+    font-size: 1.5em;
+    margin-top: 2%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
+.form>input{
+    margin-top: 10%;
+}
 .forgotPassword{
-    color: #757575;
-    cursor: pointer;
+    font-size: 80%;
     align-self: flex-end;
-    margin-right: 8%;
-    margin-top: 3%;
-    margin-bottom: 2%;
-    font-size: 0.75rem;
+    margin-top: 5%;
 }
 
 .forgotPassword:hover{
-    color: black;
+    color: rgb(66, 66, 66);
+    cursor: pointer;
 }
 
 Button{
-    margin-bottom: 4%;
+    margin-top: 5%;
 }

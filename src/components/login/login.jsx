@@ -2,7 +2,7 @@ import "../../css/login.css";
 import Button from "../Button";
 import logo from "../../img/logo.png";
 import banner from "../../img/banner.png";
-const Login = () => {
+const Login = (login , register) => {
   return (
     <div className="loginContainer">
       <div className="bannerContainer">

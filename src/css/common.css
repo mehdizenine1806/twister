@@ -22,3 +22,7 @@ input{
     padding: 5%;
     padding-left: 10%;
 }
+
+select:invalid{
+    color: rgb(102, 102, 102);
+}

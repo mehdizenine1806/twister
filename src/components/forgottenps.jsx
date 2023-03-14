@@ -1,6 +1,6 @@
-import "../../css/forgotten.css";
-import logo from "../../img/logo.png";
-import Button from "../Button";
+import "../css/forgotten.css";
+import logo from "../img/logo.png";
+import Button from "./Button";
 
 const Forgotten =() =>{
     return(

@@ -1,12 +1,12 @@
-import "../../css/signup.css";
-import logo from "../../img/logo.png";
-import Button from "../Button";
+import "../css/signup.css";
+import logo from "../img/logo.png";
+import Button from "./Button";
 
 const Signup = () => {
     
     return(
         <div className="container">
-            <form className="signupForm">
+            <div className="signupForm">
                 <img src={logo} alt="logo" className="logo"></img>
                 <h1 className="signupTitle">
                     Inscrivez-vous
@@ -27,7 +27,7 @@ const Signup = () => {
                 <Button backgroundColor="#1D9BF0" className="signup">
                     S'inscrire
                 </Button>
-            </form>
+            </div>
         </div>
     )
 

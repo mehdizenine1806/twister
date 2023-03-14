@@ -1,7 +1,7 @@
-import "../../css/login.css";
-import Button from "../Button";
-import logo from "../../img/logo.png";
-import banner from "../../img/banner.png";
+import "../css/login.css";
+import Button from "./Button";
+import logo from "./../img/logo.png";
+import banner from "./../img/banner.png";
 const Login = ({login , register,forgotten}) => {
   return (
     <div className="loginContainer">

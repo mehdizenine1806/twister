@@ -1,7 +1,7 @@
 import "./css/App.css";
-import Login from "./components/login/login";
-import Signup from "./components/signup/signup";
-import Forgotten from "./components/login/forgottenps";
+import Login from "./components/login";
+import Signup from "./components/signup";
+import Forgotten from "./components/forgottenps";
 
 import { useState } from "react";
 
